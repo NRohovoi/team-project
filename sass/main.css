@@ -112,8 +112,6 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .slider__wrapper {
@@ -218,8 +216,9 @@ ul {
   background: #c7133e;
   background-clip: padding-box;
   cursor: pointer;
+  opacity: 1;
 }
 
 .slider__indicator_active {
-  background-color: #fff;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
