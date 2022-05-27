@@ -66,7 +66,7 @@ ul {
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 .for-btn {
 }
@@ -75,6 +75,7 @@ ul {
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
+  letter-spacing: 0.04em;
 
   margin-bottom: 16px;
 }
@@ -86,20 +87,46 @@ ul {
   margin-top: 36px;
   margin-bottom: 16px;
 }
-.btn-list {
+.list-worker-soc {
   display: flex;
   gap: 18px;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
 }
-.nav-btn {
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-  position: relative;
+.list-worker-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-worker-soc__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-worker-soc__link {
+  display: flex;
   width: 12px;
   height: 12px;
+  border-radius: 50%;
+
+  color: #d31342;
+  background-color: #e5e5e5;
+  transition-property: color, backgraund-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: #c7133e;
+  }
+}
+
+.list-worker-soc__icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
 }
 
 //
@@ -108,16 +135,10 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   margin-bottom: 48px;
-  //   padding: 20px;
 }
 .slider__wrapper {
   position: relative;
   overflow: hidden;
-  //   background-color: #fff;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .slider__items {
   display: flex;
@@ -146,8 +167,6 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
-  //   color: #fff;
-  //   background: #e5e5e5;
   opacity: 1;
   user-select: none;
 }
@@ -156,7 +175,6 @@ ul {
 }
 .slider__control:focus,
 .slider__control:hover {
-  backgraund-color: #000;
   text-decoration: none;
   opacity: 0.7;
 }
@@ -184,7 +202,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 93px;
+  bottom: 88px;
   display: flex;
   justify-content: center;
   padding-left: 0;
@@ -202,8 +220,6 @@ ul {
   margin-left: 3px;
   background: #c7133e;
   background-clip: padding-box;
-  //   border-top: 10px solid transparent;
-  //   border-bottom: 10px solid transparent;
   cursor: pointer;
   opacity: 1;
 }

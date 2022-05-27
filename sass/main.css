@@ -71,7 +71,7 @@ ul {
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .named {
@@ -79,6 +79,7 @@ ul {
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
+  letter-spacing: 0.04em;
   margin-bottom: 16px;
 }
 
@@ -91,7 +92,7 @@ ul {
   margin-bottom: 16px;
 }
 
-.btn-list {
+.list-worker-soc {
   display: flex;
   gap: 18px;
   align-items: center;
@@ -99,13 +100,36 @@ ul {
   margin-bottom: 16px;
 }
 
-.nav-btn {
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-  position: relative;
+.list-worker-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-worker-soc__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-worker-soc__link {
+  display: flex;
   width: 12px;
   height: 12px;
+  border-radius: 50%;
+  color: #d31342;
+  background-color: #e5e5e5;
+  transition-property: color, backgraund-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-worker-soc__link:hover, .list-worker-soc__link:focus {
+  background-color: white;
+  color: #c7133e;
+}
+
+.list-worker-soc__icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
 }
 
 .slider {
@@ -159,7 +183,6 @@ ul {
 
 .slider__control:focus,
 .slider__control:hover {
-  backgraund-color: #000;
   text-decoration: none;
   opacity: 0.7;
 }
@@ -193,7 +216,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 93px;
+  bottom: 88px;
   display: flex;
   justify-content: center;
   padding-left: 0;
