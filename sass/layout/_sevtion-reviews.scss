@@ -48,7 +48,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.paragraph {
+.text-reviews__paragraph {
   position: relative;
   display: inline-block;
   height: 300px;
@@ -72,18 +72,7 @@ ul {
   );
 }
 
-.for-btn {
-}
-.named {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  margin-bottom: 16px;
-}
-.named1 {
+.abuot-us-box__paragraph {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
@@ -92,14 +81,14 @@ ul {
   margin-bottom: 16px;
 }
 
-.list-worker-soc {
+.list-soc {
   display: flex;
   gap: 18px;
   justify-content: center;
   align-items: center;
 }
 
-.list-worker-soc__link {
+.list-soc__link {
   display: flex;
   width: 30px;
   height: 30px;
@@ -107,18 +96,17 @@ ul {
 
   color: #d31342;
   background-color: #e5e5e5;
-  transition-property: color, backgraund-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    // background-color: white;
     color: #fff;
   }
 }
 
-.list-worker-soc__icon {
+.list-soc__icon {
   width: 30px;
   height: 30px;
   fill: currentColor;

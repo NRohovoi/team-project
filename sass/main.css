@@ -52,7 +52,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.paragraph {
+.text-reviews__paragraph {
   position: relative;
   display: inline-block;
   height: 300px;
@@ -67,20 +67,11 @@ ul {
   letter-spacing: 0.04em;
   background: repeating-linear-gradient(#e5e5e5, #e5e5e5 31px, #e1e1e1 31px, #e1e1e1 32px);
 }
-.paragraph::-webkit-scrollbar {
+.text-reviews__paragraph::-webkit-scrollbar {
   display: none;
 }
 
-.named {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
-  text-align: center;
-  letter-spacing: 0.04em;
-  margin-bottom: 16px;
-}
-
-.named1 {
+.abuot-us-box__paragraph {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
@@ -89,29 +80,29 @@ ul {
   margin-bottom: 16px;
 }
 
-.list-worker-soc {
+.list-soc {
   display: flex;
   gap: 18px;
   justify-content: center;
   align-items: center;
 }
 
-.list-worker-soc__link {
+.list-soc__link {
   display: flex;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   color: #d31342;
   background-color: #e5e5e5;
-  transition-property: color, backgraund-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-worker-soc__link:hover, .list-worker-soc__link:focus {
+.list-soc__link:hover, .list-soc__link:focus {
   color: #fff;
 }
 
-.list-worker-soc__icon {
+.list-soc__icon {
   width: 30px;
   height: 30px;
   fill: currentColor;
