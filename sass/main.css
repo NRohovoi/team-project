@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  display: block;
+}
+
 .section {
   width: 100%;
   padding-right: 20px;
