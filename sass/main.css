@@ -53,7 +53,7 @@ a {
 
 .container {
   margin-bottom: 48px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .reviews-card {
@@ -75,27 +75,26 @@ a {
   padding-right: 10px;
   padding-left: 10px;
   margin-bottom: 36px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: #e5e5e5;
   border-radius: 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text-reviews__paragraph {
-  position: relative;
   display: inline-block;
   height: 300px;
   overflow-y: auto;
   scroll-behavior: smooth;
-  padding-left: 15px;
-  padding-right: 8px;
+  padding-left: 54px;
+  padding-right: 54px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
   letter-spacing: 0.04em;
-  background: repeating-linear-gradient(#e5e5e5, #e5e5e5 31px, #e1e1e1 31px, #e1e1e1 32px);
+  background: repeating-linear-gradient(#e5e5e5, #e5e5e5 30px, #e1e1e1 30px, #e1e1e1 31px);
 }
 .text-reviews__paragraph::-webkit-scrollbar {
   display: none;
@@ -103,8 +102,9 @@ a {
 .text-reviews__paragraph::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -16px;
+  top: 7px;
+  left: 9px;
+  transform: translate(-50% -50%);
   width: 54px;
   height: 40px;
   background-image: url("../../img/icon-temples.svg");
