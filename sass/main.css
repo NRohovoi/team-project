@@ -19,12 +19,36 @@ a {
   text-decoration: none;
 }
 
+.not-displayed {
+  position: fixed;
+  transform: scale(0);
+}
+
 .section {
-  width: 320px;
+  width: 100%;
   padding-right: 20px;
   padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .container {
@@ -75,6 +99,15 @@ a {
 }
 .text-reviews__paragraph::-webkit-scrollbar {
   display: none;
+}
+.text-reviews__paragraph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 54px;
+  height: 40px;
+  background-image: url("../../img/icon-temples.svg");
 }
 
 .abuot-us-box__paragraph {
