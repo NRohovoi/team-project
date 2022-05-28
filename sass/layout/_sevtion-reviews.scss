@@ -44,19 +44,10 @@ ul {
   padding-top: 43px;
   padding-bottom: 26px;
   background: #e5e5e5;
+  border-radius: 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  //   background-image: url("../../img/Group\ 36.svg");
 }
-.text-reviews::after {
-  content: "";
-  position: absolute;
-  left: 50px;
-  top: 74px;
-  width: 180px;
-  height: 100%;
-  background-image: url("../../img/Group\ 36.svg");
-  background-repeat: no-repeat;
-}
+
 .paragraph {
   position: relative;
   display: inline-block;
@@ -67,6 +58,12 @@ ul {
   line-height: 2.55;
   text-align: center;
   letter-spacing: 0.04em;
+  background: repeating-linear-gradient(
+    #e5e5e5,
+    #e5e5e5 31px,
+    #e1e1e1 31px,
+    #e1e1e1 32px
+  );
 }
 .for-btn {
 }
@@ -150,9 +147,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-// .transition-none {
-//   transition: none;
-// }
+.transition-none {
+  transition: none;
+}
 .slider__item {
   flex: 0 0 100%;
   max-width: 100%;
@@ -187,7 +184,7 @@ ul {
 .slider__control::before {
   content: "";
   display: inline-block;
-  width: 120px;
+  width: 100%;
   height: 20px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
