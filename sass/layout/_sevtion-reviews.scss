@@ -36,8 +36,7 @@ span {
 // _______________________________________________________________________/
 .section {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+
   margin-left: auto;
   margin-right: auto;
   @include mobile {
@@ -55,6 +54,8 @@ span {
   }
 }
 .container {
+  padding-right: 20px;
+  padding-left: 20px;
   margin-bottom: 48px;
   padding-top: 80px;
 }
