@@ -42,11 +42,11 @@ ul {
 
 .text-reviews {
   position: relative;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-bottom: 36px;
-  padding-top: 43px;
-  padding-bottom: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #e5e5e5;
   border-radius: 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -55,6 +55,9 @@ ul {
 .paragraph {
   position: relative;
   display: inline-block;
+  height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   padding-left: 15px;
   padding-right: 8px;
   font-weight: 500;
@@ -63,6 +66,9 @@ ul {
   text-align: center;
   letter-spacing: 0.04em;
   background: repeating-linear-gradient(#e5e5e5, #e5e5e5 31px, #e1e1e1 31px, #e1e1e1 32px);
+}
+.paragraph::-webkit-scrollbar {
+  display: none;
 }
 
 .named {
@@ -86,25 +92,14 @@ ul {
 .list-worker-soc {
   display: flex;
   gap: 18px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.list-worker-soc {
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.list-worker-soc__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .list-worker-soc__link {
   display: flex;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   color: #d31342;
   background-color: #e5e5e5;
@@ -113,13 +108,12 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-worker-soc__link:hover, .list-worker-soc__link:focus {
-  background-color: white;
-  color: #c7133e;
+  color: #fff;
 }
 
 .list-worker-soc__icon {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
@@ -211,7 +205,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 86px;
+  bottom: 78px;
   display: flex;
   justify-content: center;
   padding-left: 0;
