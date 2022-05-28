@@ -74,6 +74,11 @@ span {
   border-radius: 50%;
 }
 
+.photo-box__img {
+  height: 85px;
+  width: 85px;
+}
+
 .text-reviews {
   position: relative;
   padding-right: 10px;
