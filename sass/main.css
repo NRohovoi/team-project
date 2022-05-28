@@ -66,13 +66,13 @@ span {
 }
 
 .photo-box {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 32px;
-  border-radius: 50%;
 }
 
 .photo-box__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 85px;
   width: 85px;
 }
