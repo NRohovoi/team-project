@@ -15,22 +15,16 @@ a {
   margin: 0%;
   text-decoration: none;
 }
-.not-displayed {
-  position: fixed;
-  transform: scale(0);
-}
 @mixin mobile {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
-
 @mixin tablet {
   @media screen and (min-width: 768px) {
     @content;
   }
 }
-
 @mixin desctop {
   @media screen and (min-width: 1200px) {
     @content;
@@ -46,13 +40,11 @@ a {
   @include mobile {
     width: 480px;
   }
-
   @include tablet {
     width: 768px;
     padding-right: 18px;
     padding-left: 18px;
   }
-
   @include desctop {
     width: 1200px;
     padding-right: 16px;
@@ -62,6 +54,10 @@ a {
 .container {
   margin-bottom: 48px;
   padding-top: 80px;
+}
+.not-displayed {
+  position: fixed;
+  transform: scale(0);
 }
 .reviews-card {
   margin-left: auto;
@@ -87,14 +83,6 @@ a {
   border-radius: 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-// .text-reviews__temples {
-//   margin-right: 16px;
-//   margin-bottom: -70px;
-// }
-// .text-reviews__icon {
-//   width: 54px;
-//   height: 40px;
-// }
 .text-reviews__paragraph {
   display: inline-block;
   height: 300px;
@@ -102,7 +90,6 @@ a {
   &::-webkit-scrollbar {
     display: none;
   }
-
   scroll-behavior: smooth;
   padding-left: 54px;
   padding-right: 54px;
@@ -128,7 +115,6 @@ a {
     background-image: url("../../img/icon-temples.svg");
   }
 }
-
 .abuot-us-box__paragraph {
   font-weight: 500;
   font-size: 14px;
@@ -137,14 +123,12 @@ a {
   margin-top: 36px;
   margin-bottom: 16px;
 }
-
 .list-soc {
   display: flex;
   gap: 18px;
   justify-content: center;
   align-items: center;
 }
-
 .list-soc__link {
   display: flex;
   width: 30px;
@@ -156,21 +140,17 @@ a {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     color: #fff;
   }
 }
-
 .list-soc__icon {
   width: 30px;
   height: 30px;
   fill: currentColor;
 }
-
 //
-
 .slider {
   position: relative;
   overflow: hidden;
