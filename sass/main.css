@@ -68,6 +68,16 @@ span {
 .photo-box {
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .photo-box {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo-box {
+    margin-bottom: 16px;
+  }
+}
 
 .photo-box__img {
   display: block;
@@ -87,6 +97,19 @@ span {
   background: #e5e5e5;
   border-radius: 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .text-reviews {
+    background: rgba(250, 250, 250, 0.4);
+    box-shadow: none;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-reviews {
+    background: #fafafa;
+    padding-top: 33px;
+  }
 }
 
 .text-reviews__paragraph {
@@ -116,6 +139,32 @@ span {
   height: 40px;
   background-image: url("../../img/icon-temples.svg");
 }
+@media screen and (min-width: 1200px) {
+  .text-reviews__paragraph::before {
+    top: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-reviews__paragraph {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-reviews__paragraph {
+    background: repeating-linear-gradient(rgba(250, 250, 250, 0.4), rgba(250, 250, 250, 0.4) 30px, #e1e1e1 30px, #e1e1e1 31px);
+    height: 160px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-reviews__paragraph {
+    background: repeating-linear-gradient(#fafafa, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+    height: 130px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
 
 .abuot-us-box__paragraph {
   font-weight: 500;
@@ -124,6 +173,21 @@ span {
   text-align: center;
   margin-top: 36px;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .abuot-us-box__paragraph {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.81;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .abuot-us-box__paragraph {
+    margin-top: 36px;
+    font-size: 20px;
+    line-height: 1.86;
+  }
 }
 
 .list-soc {
@@ -252,6 +316,16 @@ span {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 768px) {
+  .slider__indicators {
+    bottom: 106px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider__indicators {
+    bottom: 116px;
+  }
 }
 
 .slider__indicator {
